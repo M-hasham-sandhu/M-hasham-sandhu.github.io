@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="cyberpunk.css">
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -40,6 +41,10 @@
           <a class="button button-ghost" href="assets/Muhammad-Hasham-CV.pdf" target="_blank" rel="noopener">View résumé</a>
         </div>
       </div>
+      <a class="hero-feature" href="#zhai" aria-label="Explore Zhai, Unreal Engine project">
+        <img src="assets/zhai-poster.jpg" alt="Zhai gameplay in a fantasy landscape">
+        <span class="hero-feature-caption"><span>Featured Unreal project</span><strong>ZHAI</strong><span>Explore the project ↗</span></span>
+      </a>
       <div class="focus-strip reveal" aria-label="Selected areas of work">
         <span>Multiplayer gameplay</span><span>Combat systems</span><span>AI &amp; encounters</span><span>Multi-engine development</span>
       </div>
@@ -52,7 +57,28 @@
         <p>From a networked battle royale to shipped mobile titles, the work is centered on systems that must stay readable, responsive, and reliable.</p>
       </div>
 
-      <article class="feature-project reveal">
+      <article class="feature-project zhai-feature reveal" id="zhai">
+        <div class="video-shell">
+          <video controls playsinline preload="none" poster="assets/zhai-poster.jpg" aria-label="Zhai gameplay trailer">
+            <source src="assets/zhai-trailer.mp4" type="video/mp4">
+            Your browser does not support embedded video.
+          </video>
+          <span class="video-label">Gameplay trailer</span>
+        </div>
+        <div class="feature-copy">
+          <div class="project-kicker"><span>In development</span><span>Unreal Engine</span></div>
+          <h3>Zhai</h3>
+          <p class="lead">A third-person action-adventure set in Il’Navir, where recovered memories unlock new abilities and elemental combat.</p>
+          <ul class="impact-list">
+            <li><span>My contribution</span>Gameplay development on the Unreal project, including boss encounters and ability-driven combat.</li>
+            <li><span>Systems</span>Working with GAS and ACF for gameplay and combat systems.</li>
+          </ul>
+          <a class="button button-primary" href="https://store.steampowered.com/app/4452500/Zhai/" target="_blank" rel="noopener">View Zhai on Steam ↗</a>
+          <p class="card-note">Developed and published by The Orange Giant GDS. Release date to be announced.</p>
+        </div>
+      </article>
+
+      <article class="feature-project sacred-feature reveal">
         <div class="video-shell">
           <video controls playsinline preload="metadata" aria-label="NanoCry gameplay trailer">
             <source src="assets/nanocry-trailer.mp4" type="video/mp4">
@@ -109,14 +135,6 @@
       </article>
 
       <div class="project-grid">
-        <article class="project-card project-card-wide reveal">
-          <div class="card-top"><span>Unreal Engine</span><span class="project-state">In production</span></div>
-          <h3>Unannounced UE5 Story Game</h3>
-          <p>Contributing to an action-focused story game with boss encounters and ability-driven combat.</p>
-          <div class="tags"><span>Unreal Engine</span><span>Boss Battles</span><span>GAS / ACF</span></div>
-          <p class="card-note">Public-safe overview. Project details remain confidential.</p>
-        </article>
-
         <article class="project-card reveal">
           <div class="card-top"><span>Unity</span><span class="project-state">Prototype</span></div>
           <h3>3D Tower Defence</h3>
@@ -193,7 +211,7 @@
       <div class="timeline">
         <article class="timeline-item reveal">
           <div><time>Nov 2025 — Present</time><span>Devsinc</span></div>
-          <div><h3>Game Developer — Gameplay &amp; Multiplayer</h3><p>Gameplay, combat, multiplayer, and AI systems across Unreal Engine and Unity projects, including NanoCry, Sacred Tails, and Speed Keyboard Escape.</p></div>
+          <div><h3>Game Developer — Gameplay &amp; Multiplayer</h3><p>Gameplay, combat, multiplayer, and AI systems across Unreal Engine and Unity projects, including Zhai, NanoCry, Sacred Tails, and Speed Keyboard Escape.</p></div>
         </article>
         <article class="timeline-item reveal">
           <div><time>Sep 2023 — Nov 2025</time><span>Ten Pixel Studios</span></div>
