@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="midnight.css?v=20261101-industry">
+  <link rel="stylesheet" href="midnight.css?v=20261101-sidebar">
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -23,21 +23,24 @@
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>Menu</button>
     <nav id="site-nav" class="site-nav" aria-label="Primary navigation" data-nav>
-      <a href="#work">Work</a>
+      <a href="#top">Introduction</a>
+      <a href="#work">Professional work</a>
       <a href="#experience">Experience</a>
       <a href="#systems">Technical skills</a>
       <a href="#contact">Contact</a>
     </nav>
+    <div class="sidebar-links"><a href="https://github.com/M-hasham-sandhu/">GitHub ↗</a><a href="https://www.linkedin.com/in/muhammad-hasham-sandhu/">LinkedIn ↗</a><a href="mailto:m.hasham1239@gmail.com">Email ↗</a></div>
+    <p class="sidebar-location">Lahore, Pakistan</p>
   </header>
 
   <main id="main">
     <section class="hero" id="top">
       <div class="hero-copy reveal">
         <p class="eyebrow">Gameplay Engineer · Lahore, Pakistan</p>
-        <h1>Muhammad Hasham.<br><em>Gameplay Engineer.</em></h1>
+        <h1>Gameplay Engineer<span class="hero-subtitle">Unreal Engine &amp; Unity</span></h1>
         <p class="hero-intro">I develop gameplay, combat, multiplayer, and player-facing systems across Unreal Engine and Unity. My professional work spans action-adventure, networked combat, and shipped mobile games.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#work">View professional work</a>
+          <a class="button button-primary" href="#work">Explore my work</a>
           <a class="button button-ghost" href="assets/Muhammad-Hasham-CV.pdf" target="_blank" rel="noopener">View résumé</a>
         </div>
       </div>
@@ -49,11 +52,12 @@
     <section class="showcase section" id="work">
       <div class="section-heading reveal">
         <p class="eyebrow">Professional projects</p>
-        <h2>Selected work</h2>
+        <h2>Professional work</h2>
         <p>Gameplay systems and technical contributions from my work with professional development teams.</p>
       </div>
 
       <article class="feature-project zhai-feature reveal" id="zhai">
+        <div class="project-title"><h3>Zhai</h3><span>Unreal Engine</span></div>
         <div class="video-shell">
           <video controls playsinline preload="none" poster="assets/zhai-poster.jpg" aria-label="Zhai gameplay trailer">
             <source src="assets/zhai-trailer.mp4" type="video/mp4">
@@ -63,7 +67,7 @@
         </div>
         <div class="feature-copy">
           <div class="project-kicker"><span>In development</span><span>Unreal Engine</span></div>
-          <h3>Zhai</h3>
+          <h4>Responsibilities</h4>
           <p class="lead">Gameplay development for an Unreal action-adventure, focused on boss encounters and ability-driven combat.</p>
           <ul class="impact-list">
             <li><span>My contribution</span>Gameplay development on the Unreal project, including boss encounters and ability-driven combat.</li>
@@ -72,9 +76,10 @@
           <a class="button button-primary" href="https://store.steampowered.com/app/4452500/Zhai/" target="_blank" rel="noopener">View Zhai on Steam ↗</a>
           <p class="card-note">Developed and published by The Orange Giant GDS. Release date to be announced.</p>
         </div>
-      </article>
+      <aside class="project-facts"><h4>Project information</h4><dl><dt>Contribution</dt><dd>Gameplay development</dd><dt>Engine</dt><dd>Unreal Engine</dd><dt>Technologies / focus</dt><dd>GAS · ACF</dd></dl></aside></article>
 
       <article class="feature-project sacred-feature reveal">
+        <div class="project-title"><h3>NanoCry</h3><span>Unity</span></div>
         <div class="video-shell">
           <video controls playsinline preload="metadata" aria-label="NanoCry gameplay trailer">
             <source src="assets/nanocry-trailer.mp4" type="video/mp4">
@@ -84,7 +89,7 @@
         </div>
         <div class="feature-copy">
           <div class="project-kicker"><span>In development</span><span>Unity · Photon Fusion</span></div>
-          <h3>NanoCry</h3>
+          <h4>Responsibilities</h4>
           <p class="lead">Multiplayer gameplay and combat systems for a 27-player third-person battle royale.</p>
           <ul class="impact-list">
             <li><span>Networked play</span>RPC-driven gameplay and network-state synchronization using Photon Fusion.</li>
@@ -93,16 +98,17 @@
           </ul>
           <p class="availability">In development · Trailer shared with permission</p>
         </div>
-      </article>
+      <aside class="project-facts"><h4>Project information</h4><dl><dt>Contribution</dt><dd>Gameplay &amp; multiplayer</dd><dt>Engine</dt><dd>Unity</dd><dt>Technologies / focus</dt><dd>Photon Fusion</dd></dl></aside></article>
 
       <article class="feature-project sacred-feature reveal">
+        <div class="project-title"><h3>Sacred Tails</h3><span>Unity</span></div>
         <div class="video-shell video-embed">
           <iframe src="https://www.youtube-nocookie.com/embed/ie_Wk76ySac?rel=0" title="Sacred Tails gameplay showcase" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <span class="video-label">Official gameplay showcase</span>
         </div>
         <div class="feature-copy">
           <div class="project-kicker"><span>Gameplay contribution</span><span>Unity</span></div>
-          <h3>Sacred Tails</h3>
+          <h4>Responsibilities</h4>
           <p class="lead">Gameplay improvements, in-game battle systems, and player-facing UI for a multiplayer adventure.</p>
           <ul class="impact-list">
             <li><span>Battle systems</span>Implemented gameplay logic and core combat calculations.</li>
@@ -110,7 +116,7 @@
           </ul>
           <a class="text-link" href="https://www.sacredtails.com/" target="_blank" rel="noopener">Visit official site</a>
         </div>
-      </article>
+      <aside class="project-facts"><h4>Project information</h4><dl><dt>Contribution</dt><dd>Gameplay contribution</dd><dt>Engine</dt><dd>Unity</dd><dt>Technologies / focus</dt><dd>Battle systems · UI</dd></dl></aside></article>
 
     </section>
 
